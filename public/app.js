@@ -9,6 +9,8 @@ const apollo_server_core_1 = require("apollo-server-core");
 const http_1 = __importDefault(require("http"));
 const database_1 = require("./core/config/database");
 const index_1 = require("./features/graphql/index");
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 const httpServer = http_1.default.createServer(app);

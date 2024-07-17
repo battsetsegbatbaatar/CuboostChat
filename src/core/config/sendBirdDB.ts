@@ -46,6 +46,7 @@ const params: any = {
   customApiHost: DB_HOST
 };
 
-const sb: SendbirdChat = SendbirdChat.init(params);
+const sbChat: SendbirdChat = SendbirdChat.init(params);
 
-console.log('SendbirdChat initialized:', sb);
+console.log('SendbirdChat initialized:', sbChat);
+export default sbChat;

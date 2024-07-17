@@ -59,5 +59,6 @@ const params = {
     modules: [new message_1.BaseMessage()],
     customApiHost: DB_HOST
 };
-const sb = chat_1.default.init(params);
-console.log('SendbirdChat initialized:', sb);
+const sbChat = chat_1.default.init(params);
+console.log('SendbirdChat initialized:', sbChat);
+exports.default = sbChat;

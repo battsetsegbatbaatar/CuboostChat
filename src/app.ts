@@ -4,6 +4,9 @@ import { ApolloServerPluginDrainHttpServer } from 'apollo-server-core';
 import http from 'http';
 import { connectToDatabase } from './core/config/database';
 import { schema } from './features/graphql/index';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app: Application = express();
 app.use(express.json());

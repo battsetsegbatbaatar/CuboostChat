@@ -5,7 +5,7 @@ import { typeDefs } from './schemas/index';
 export const schema = makeExecutableSchema({
   typeDefs,
   resolvers: {
-    Query: resolvers.userResolver.Query,
-    Mutation: resolvers.userResolver.Mutation
+    Query: resolvers.chatResolver.Query,
+    Mutation: resolvers.chatResolver.Mutation
   }
 });

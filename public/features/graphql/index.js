@@ -7,7 +7,7 @@ const index_2 = require("./schemas/index");
 exports.schema = (0, schema_1.makeExecutableSchema)({
     typeDefs: index_2.typeDefs,
     resolvers: {
-        Query: index_1.resolvers.userResolver.Query,
-        Mutation: index_1.resolvers.userResolver.Mutation
+        Query: index_1.resolvers.chatResolver.Query,
+        Mutation: index_1.resolvers.chatResolver.Mutation
     }
 });
